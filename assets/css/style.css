@@ -3,7 +3,8 @@
 --------------------------------------------------------------*/
 body {
     font-family: "Open Sans", sans-serif;
-    color: #444444;
+    color: #fff; /* font color */
+    background-color: #333333 !important;
   }
   
   a {
@@ -433,18 +434,6 @@ body {
     overflow: hidden;
   }
   
-  .section-bg {
-    background-color: #f6f9fe;
-
-    /* background: url("../images/bg_3.png") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
-
-    
-  }
-  
   .section-title {
     text-align: center;
     padding-bottom: 30px;
@@ -456,13 +445,19 @@ body {
   }
   
   .section-title h3 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #37517e;
+    color:  #D5AD6D; /*if no support for background-clip*/
+    font-family: 'Times New Roman',serif;
+    background: -webkit-linear-gradient(transparent, transparent),
+                -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .section-title h3::before {
@@ -499,7 +494,8 @@ body {
   
   .section-title p {
     margin: 16px auto 0 auto;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: 'Times New Roman',serif;
   }
   
   @media (min-width: 1024px) {
@@ -508,61 +504,7 @@ body {
     }
   }
   
-  /*--------------------------------------------------------------
-  # Breadcrumbs
-  --------------------------------------------------------------*/
-  .breadcrumbs {
-    padding: 20px 0;
-    background-color: #f1f6fe;
-    min-height: 40px;
-  }
-  
-  .breadcrumbs h2 {
-    font-size: 24px;
-    font-weight: 300;
-    margin: 0;
-  }
-  
-  @media (max-width: 992px) {
-    .breadcrumbs h2 {
-      margin: 0 0 10px 0;
-    }
-  }
-  
-  .breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  .breadcrumbs ol li+li {
-    padding-left: 10px;
-  }
-  
-  .breadcrumbs ol li+li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #6c757d;
-    content: "/";
-  }
-  
-  @media (max-width: 768px) {
-    .breadcrumbs .d-flex {
-      display: block !important;
-    }
-  
-    .breadcrumbs ol {
-      display: block;
-    }
-  
-    .breadcrumbs ol li {
-      display: inline-block;
-    }
-  }
-  
+ 
   /*--------------------------------------------------------------
   # Featured Services
   --------------------------------------------------------------*/
@@ -570,8 +512,8 @@ body {
     padding: 30px;
     position: relative;
     overflow: hidden;
-    background: #fff;
-    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    background: #333333 important;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
@@ -613,7 +555,7 @@ body {
   }
   
   .featured-services .title a {
-    color: #111;
+    color: rgba(255,255,255,.7);
   }
   
   .featured-services .description {
@@ -637,6 +579,7 @@ body {
   .about .content h3 {
     font-weight: 600;
     font-size: 26px;
+    color: rgba(255,255,255,.7);
   }
   
   .about .content ul {
@@ -656,7 +599,7 @@ body {
   
   .about .content ul i {
     background: #fff;
-    box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+    box-shadow: 0 0 5px 10px rgba(214, 215, 216, 0.4);
     font-size: 24px;
     padding: 20px;
     margin-right: 15px;
@@ -666,7 +609,7 @@ body {
   
   .about .content ul h5 {
     font-size: 18px;
-    color: #555555;
+    color: rgba(255,255,255,.7);
   }
   
   .about .content ul p {
@@ -676,44 +619,7 @@ body {
   .about .content p:last-child {
     margin-bottom: 0;
   }
-  
-  /*--------------------------------------------------------------
-  # Skills
-  --------------------------------------------------------------*/
-  .skills .progress {
-    height: 60px;
-    display: block;
-    background: none;
-    border-radius: 0;
-  }
-  
-  .skills .progress .skill {
-    padding: 0;
-    margin: 0 0 6px 0;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #222222;
-  }
-  
-  .skills .progress .skill .val {
-    float: right;
-    font-style: normal;
-  }
-  
-  .skills .progress-bar-wrap {
-    background: #e2eefd;
-    height: 10px;
-  }
-  
-  .skills .progress-bar {
-    width: 1px;
-    height: 10px;
-    transition: 0.9s;
-    background-color: #106eea;
-  }
-  
+    
   /*--------------------------------------------------------------
   # Counts
   --------------------------------------------------------------*/
@@ -794,7 +700,7 @@ body {
     border: 1px solid #e2eefd;
     padding: 80px 20px;
     transition: all ease-in-out 0.3s;
-    background: #fff;
+    background: #333333 !important;
   }
   
   .services .icon-box .icon {
@@ -824,7 +730,7 @@ body {
   }
   
   .services .icon-box h4 a {
-    color: #222222;
+    color: rgba(255,255,255,.7);
     transition: ease-in-out 0.3s;
   }
   
@@ -835,8 +741,8 @@ body {
   }
   
   .services .icon-box:hover {
-    border-color: #fff;
-    box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+    border-color: #106eea;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
   }
   
   .services .icon-box:hover h4 a,
@@ -1135,7 +1041,7 @@ body {
     overflow: hidden;
     border-radius: 4px;
     background: #fff;
-    box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
   }
   
   .team .member .member-img {
@@ -1365,7 +1271,7 @@ body {
   }
   
   .faq .faq-list .collapsed {
-    color: black;
+    color: rgba(255,255,255,.7);
   }
   
   .faq .faq-list .collapsed:hover {
@@ -1382,18 +1288,18 @@ body {
     transition: 0.6s;
   }
 
-  /* Terms and Conditions */
+/* Terms and Conditions */
 
 .jumbotron {
-    background-color: #f6f9fe;
-    color:#444444;
+    background-color: #333333 !important;
     padding: 2rem 1rem;
     font-size: 14px;
     margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(214, 215, 216, 0.3);
 }
 
 h2 {
-    color: #444444;
+  color: rgba(255,255,255,.7);   
 }
 
 p {
@@ -1409,20 +1315,20 @@ p {
   
 .terms-text::-webkit-scrollbar{
     width: 2px;
-    background-color: #010479;
+    background-color: #e7f1fd;
 }
 
 .terms-text::-webkit-scrollbar-thumb{
-    background-color: #cbe0fb;
+    background-color: #010479;
 }
   
   /*--------------------------------------------------------------
   # Contact
   --------------------------------------------------------------*/
   .contact .info-box {
-    color: #444444;
+    color: #fff;
     text-align: center;
-    box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+    box-shadow: 0 0 15px rgba(214, 215, 216, 0.3);
     padding: 20px 0 30px 0;
   }
   
@@ -1436,7 +1342,7 @@ p {
   
   .contact .info-box h3 {
     font-size: 20px;
-    color: #777777;
+    color: rgba(255,255,255,.7);
     font-weight: 700;
     margin: 10px 0;
   }
@@ -1449,7 +1355,7 @@ p {
   }
   
   .contact .php-email-form {
-    box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
+    box-shadow: 0 0 15px rgba(214, 215, 216, 0.4);
     padding: 30px;
   }
   
@@ -1554,9 +1460,15 @@ p {
   
   #footer .footer-newsletter {
     padding: 50px 0;
-    background: #f1f6fe;
+    /* background: #f1f6fe;  --background color*/
     text-align: center;
     font-size: 16px;
+    
+  }
+
+  #footer .footer-newsletter .container{
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+  padding: 20px 0;
   }
   
   #footer .footer-newsletter h4 {
@@ -1565,15 +1477,27 @@ p {
     padding: 0;
     line-height: 1;
     font-weight: 600;
+    color:  #D5AD6D; /*if no support for background-clip*/
+    font-family: 'Times New Roman',serif;
+    background: -webkit-linear-gradient(transparent, transparent),
+                -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #footer .footer-newsletter p{
+    color: #fff;
   }
   
   #footer .footer-newsletter form {
     margin-top: 30px;
-    background: #f1f6fe;
+    /* background: #f1f6fe; --background color*/
     padding: 6px 10px;
     position: relative;
     border-radius: 4px;
     text-align: center;
+    
   }
   
   #footer .footer-newsletter form input[type=email] {
