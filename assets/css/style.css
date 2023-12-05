@@ -783,6 +783,10 @@ body {
   .counts {
     padding: 70px 0 60px;
   }
+
+  .counts p{
+    color: #181616;
+  }
   
   .counts .count-box {
     padding: 30px 30px 25px 30px;
@@ -799,7 +803,7 @@ body {
     transform: translateX(-50%);
     font-size: 24px;
     background: #106eea;
-    color: #fff;
+    color: #181616;
     width: 56px;
     height: 56px;
     line-height: 0;
@@ -912,17 +916,14 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # Testimonials
+  # Marquee
   --------------------------------------------------------------*/
-  .testimonials {
+  .marquee-section {
     padding: 80px 0;
-    background: url("../img/testimonials-bg.jpg") no-repeat;
-    background-position: center center;
-    background-size: cover;
     position: relative;
   }
   
-  .testimonials::before {
+  .marquee-section::before {
     content: "";
     position: absolute;
     left: 0;
@@ -931,85 +932,66 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
   }
-  
-  .testimonials .section-header {
-    margin-bottom: 40px;
+
+  .marquee-title {
+    font-size: 4.4rem;
+    font-weight: 900;
+    word-spacing: 12px;
+      text-align: center;
+    padding-inline-start: 1rem;
   }
   
-  .testimonials .testimonials-carousel,
-  .testimonials .testimonials-slider {
+  .marquee {
+    width: 100%;
+    height: 15rem;
+    pointer-events: none;
+    background: black;
     overflow: hidden;
+    box-shadow: 0 2rem 2rem 0.4rem rgba(248, 243, 243, 0.603);
   }
   
-  .testimonials .testimonial-item {
+  .marquee__inner-wrap {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .marquee span {
     text-align: center;
-    color: #fff;
+    color: lightgray;
+    font-weight: 400;
+    white-space: nowrap;
+    font-size: max(2vw, 2.4rem);
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 1vh 1vw 0;
+    text-transform: uppercase;
   }
   
-  .testimonials .testimonial-item .testimonial-img {
-    width: 100px;
-    border-radius: 50%;
-    border: 6px solid rgba(255, 255, 255, 0.15);
-    margin: 0 auto;
+  .marquee__img {
+    width: max(8rem, 12vw);
+    height: 8rem;
+    margin: 0 4vw;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/Khrusos_Capital_Group_Icon.png");
+    background-size: 150px;
   }
   
-  .testimonials .testimonial-item h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0 5px 0;
-    color: #fff;
-  }
-  
-  .testimonials .testimonial-item h4 {
-    font-size: 14px;
-    color: #ddd;
-    margin: 0 0 15px 0;
-  }
-  
-  .testimonials .testimonial-item .quote-icon-left,
-  .testimonials .testimonial-item .quote-icon-right {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 26px;
-  }
-  
-  .testimonials .testimonial-item .quote-icon-left {
-    display: inline-block;
-    left: -5px;
+  .marquee__inner {
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    display: flex;
     position: relative;
+    animation: marquee 15s linear infinite;
+    will-change: transform;
   }
   
-  .testimonials .testimonial-item .quote-icon-right {
-    display: inline-block;
-    right: -5px;
-    position: relative;
-    top: 10px;
-  }
-  
-  .testimonials .testimonial-item p {
-    font-style: italic;
-    margin: 0 auto 15px auto;
-    color: #eee;
-  }
-  
-  .testimonials .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .testimonials .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: rgba(255, 255, 255, 0.5);
-    opacity: 1;
-  }
-  
-  .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #106eea;
-  }
-  
-  @media (min-width: 992px) {
-    .testimonials .testimonial-item p {
-      width: 80%;
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
     }
   }
   
@@ -1818,3 +1800,71 @@ body {
       padding: 2px 0;
     }
   }
+
+   /*--------------------------------------------------------------
+  # Table Section
+  --------------------------------------------------------------*/
+  
+  .center-tabs {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+  }
+
+  .nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    margin-right: 0;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .tab-content {
+    margin-top: 20px;
+  }
+
+  .table-container {
+    margin: 20px 0;
+  }
+
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(10px); /* Adjust the blur effect as needed */
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0px 0px 15px rgba(255, 253, 253, 0.863);
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+
+  .table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-top: 1px solid #dee2e6;
+  }
+
+  .paragraphs {
+    margin: 20px 0;
+    color: #fff;
+  }
+
+  .custom-list {
+    list-style-type: upper-roman;
+  }
+
+  .custom-list li {
+    margin-bottom: 10px;
+  }
+  
