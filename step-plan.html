@@ -89,8 +89,8 @@
 
               <div class="tab-content">
                 <div id="tab1" class="tab-pane fade show active">
-                  <div class="container table-container">
-                    <table class="table table-bordered table-striped table-borderless">
+                  <div class="container table-container table-responsive">
+                    <table class="table table-bordered table-hover responsive table-striped table-borderless">
                       <thead>
                         <tr>
                           <th>Rule Area</th>
@@ -101,46 +101,46 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Equity Growth Target</td>
-                          <td>10%</td>
-                          <td>-</td>
-                          <td>Live Account has no limit</td>
+                          <td data-label="Rule Area">Equity Growth Target</td>
+                          <td data-label="Assessment">10%</td>
+                          <td data-label="Live">-</td>
+                          <td data-label="Notes">Live Account has no limit</td>
                         </tr>
-                          <td>Daily Loss Limit</td>
-                          <td>5%</td>
-                          <td>5%</td>
-                          <td>Equity-based, limit set by prior day balance (Hard Breach)</td>
+                          <td data-label="Rule Area">Daily Loss Limit</td>
+                          <td data-label="Assessment">5%</td>
+                          <td data-label="Live">5%</td>
+                          <td data-label="Notes">Equity-based, limit set by prior day balance (Hard Breach)</td>
                         </tr>
-                          <td>Max Drawdown</td>
-                          <td>6%</td>
-                          <td>6%</td>
-                          <td>Equity-based, trailing account balance high water mark, <br> in at starting account balance (Hard Breach)</td>
+                          <td data-label="Rule Area">Max Drawdown</td>
+                          <td data-label="Assessment">6%</td>
+                          <td data-label="Live">6%</td>
+                          <td data-label="Notes">Equity-based, trailing account balance high water mark, <br> in at starting account balance (Hard Breach)</td>
                         </tr>
-                          <td>Inactivity Period</td>
-                          <td>30 Days</td>
-                          <td>30 Days</td>
-                          <td>Must place trade (Hard Breach)</td>
+                          <td data-label="Rule Area">Inactivity Period</td>
+                          <td data-label="Assessment">30 Days</td>
+                          <td data-label="Live">30 Days</td>
+                          <td data-label="Notes">Must place trade (Hard Breach)</td>
                         </tr>
-                          <td>Leverage</td>
-                          <td>1:10</td>
-                          <td>1:10</td>
-                          <td>Can go up to 1:20 with add-on</td>
+                          <td data-label="Rule Area">Leverage</td>
+                          <td data-label="Assessment">1:10</td>
+                          <td data-label="Live">1:10</td>
+                          <td data-label="Notes">Can go up to 1:20 with add-on</td>
                         </tr>
-                          <td>Stoploss Required</td>
-                          <td>Yes</td>
-                          <td>100</td>
-                          <td>Required for each trade (Soft Breach)</td>
+                          <td data-label="Rule Area">Stoploss Required</td>
+                          <td data-label="Assessment">Yes</td>
+                          <td data-label="Live">100</td>
+                          <td data-label="Notes">Required for each trade (Soft Breach)</td>
                         </tr>
-                          <td>Flat for Weekend</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>All positions closed on Friday 3:45pm (Soft Breach)</td>
+                          <td data-label="Rule Area">Flat for Weekend</td>
+                          <td data-label="Assessment">Yes</td>
+                          <td data-label="Live">Yes</td>
+                          <td data-label="Notes">All positions closed on Friday 3:45pm (Soft Breach)</td>
                         </tr>
                         </tr>
-                          <td>Max Time</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>No Max Time requirements</td>
+                          <td data-label="Rule Area">Max Time</td>
+                          <td data-label="Assessment">-</td>
+                          <td data-label="Live">-</td>
+                          <td data-label="Notes">No Max Time requirements</td>
                         </tr>
                       </tbody>
                     </table>
@@ -155,70 +155,78 @@
                       </ol>
                     </div>
                   </div>
+                  
                 </div>
+
+                
 
                 <div id="tab2" class="tab-pane fade">
                   <div class="container table-container">
-                    <table class="table table-bordered table-striped table-borderless">
+                    <table class="table table-responsive table-bordered table-striped table-borderless">
                       <thead>
                         <tr>
-                          <th>Rule Area</th>
-                          <th>Step 1</th>
-                          <th>Step 2</th>
-                          <th>Live</th>
-                          <th>Notes</th>
+                          <th data-label="Rule Area">Rule Area</th>
+                          <th data-label="Step 1">Step 1</th>
+                          <th data-label="Step 2">Step 2</th>
+                          <th data-label="Live">Live</th>
+                          <th data-label="Notes">Notes</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Equity Growth Target</td>
-                          <td>10%</td>
-                          <td>5%</td>
-                          <td>-</td>
-                          <td>Live Account has no limit</td>
+                          <td data-label="Rule Area">Equity Growth Target</td>
+                          <td data-label="Step 1">10%</td>
+                          <td data-label="Step 2">5%</td>
+                          <td data-label="Live">-</td>
+                          <td data-label="Notes">Live Account has no limit</td>
                         </tr>
-                          <td>Daily Loss Limit</td>
-                          <td>4%</td>
-                          <td>4%</td>
-                          <td>4%</td>
-                          <td>Equity-based, limit set by prior day balance (Hard Breach)</td>
+                        <tr>
+                          <td data-label="Rule Area">Daily Loss Limit</td>
+                          <td data-label="Step 1">4%</td>
+                          <td data-label="Step 2">4%</td>
+                          <td data-label="Live">4%</td>
+                          <td data-label="Notes">Equity-based, limit set by prior day balance (Hard Breach)</td>
                         </tr>
-                          <td>Max Drawdown</td>
-                          <td>8%</td>
-                          <td>8%</td>
-                          <td>8%</td>
-                          <td>Equity-based, does not trail (Hard Breach)</td>
+                        <tr>
+                          <td data-label="Rule Area">Max Drawdown</td>
+                          <td data-label="Step 1">8%</td>
+                          <td data-label="Step 2">8%</td>
+                          <td data-label="Live">8%</td>
+                          <td data-label="Notes">Equity-based, does not trail (Hard Breach)</td>
                         </tr>
-                          <td>Inactivity Period</td>
-                          <td>30 Days</td>
-                          <td>30 Days</td>
-                          <td>30 Days</td>
-                          <td>Must place trade (Hard Breach)</td>
+                        <tr>
+                          <td data-label="Rule Area">Inactivity Period</td>
+                          <td data-label="Step 1">30 Days</td>
+                          <td data-label="Step 2">30 Days</td>
+                          <td data-label="Live">30 Days</td>
+                          <td data-label="Notes">Must place trade (Hard Breach)</td>
                         </tr>
-                          <td>Leverage</td>
-                          <td>1:30</td>
-                          <td>1:30</td>
-                          <td>1:30</td>
-                          <td></td>
+                        <tr>
+                          <td data-label="Rule Area">Leverage</td>
+                          <td data-label="Step 1">1:30</td>
+                          <td data-label="Step 2">1:30</td>
+                          <td data-label="Live">1:30</td>
+                          <td data-label="Notes"></td>
                         </tr>
-                          <td>Stoploss Required</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>Required for each trade (Soft Breach)</td>
+                        <tr>
+                          <td data-label="Rule Area">Stoploss Required</td>
+                          <td data-label="Step 1">Yes</td>
+                          <td data-label="Step 2">Yes</td>
+                          <td data-label="Live">Yes</td>
+                          <td data-label="Notes">Required for each trade (Soft Breach)</td>
                         </tr>
-                          <td>Flat for Weekend</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>All positions closed on Friday 3:45pm (Soft Breach)</td>
+                          <td data-label="Rule Area">Flat for Weekend</td>
+                          <td data-label="Step 1">Yes</td>
+                          <td data-label="Step 2">Yes</td>
+                          <td data-label="Live">Yes</td>
+                          <td data-label="Notes">All positions closed on Friday 3:45pm (Soft Breach)</td>
                         </tr>
-                        </tr>
-                          <td>Max Time</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>No Max Time requirements</td>
+                        <tr>
+                          <td data-label="Rule Area">Max Time</td>
+                          <td data-label="Step 1">-</td>
+                          <td data-label="Step 2">-</td>
+                          <td data-label="Live">-</td>
+                          <td data-label="Notes">No Max Time requirements</td>
                         </tr>
                       </tbody>
                     </table>
@@ -240,71 +248,76 @@
                       <thead>
                         <tr>
                           <th>Rule Area</th>
-                          <th>Step 1</th>
-                          <th>Step 2</th>
-                          <th>Step 3</th>
-                          <th>Live</th>
-                          <th>Notes</th>
+                          <th data-label="Step 1">Step 1</th>
+                          <th data-label="Step 2">Step 2</th>
+                          <th data-label="Step 3">Step 3</th>
+                          <th data-label="Live">Live</th>
+                          <th data-label="Notes">Notes</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Equity Growth Target</td>
-                          <td>5%</td>
-                          <td>5%</td>
-                          <td>5%</td>
-                          <td>-</td>
-                          <td>Live Account has no limit</td>
+                          <td data-label="Rule Area">Equity Growth Target</td>
+                          <td data-label="Step 1">5%</td>
+                          <td data-label="Step 2">5%</td>
+                          <td data-label="Step 3">5%</td>
+                          <td data-label="Live">-</td>
+                          <td data-label="Notes">Live Account has no limit</td>
                         </tr>
-                          <td>Daily Loss Limit</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>There is no daily loss</td>
+                        <tr>
+                          <td data-label="Rule Area">Daily Loss Limit</td>
+                          <td data-label="Step 1">-</td>
+                          <td data-label="Step 2">-</td>
+                          <td data-label="Step 3">-</td>
+                          <td data-label="Live">-</td>
+                          <td data-label="Notes">There is no daily loss</td>
                         </tr>
-                          <td>Max Drawdown</td>
-                          <td>5%</td>
-                          <td>5%</td>
-                          <td>5%</td>
-                          <td>5%</td>
-                          <td>Equity-based, does not trail (Hard Breach)</td>
+                          <td data-label="Rule Area">Max Drawdown</td>
+                          <td data-label="Step 1">5%</td>
+                          <td data-label="Step 2">5%</td>
+                          <td data-label="Step 3">5%</td>
+                          <td data-label="Live">5%</td>
+                          <td data-label="Notes">Equity-based, does not trail (Hard Breach)</td>
                         </tr>
-                          <td>Inactivity Period</td>
-                          <td>30 Days</td>
-                          <td>30 Days</td>
-                          <td>30 Days</td>
-                          <td>30 Days</td>
-                          <td>Must place trade (Hard Breach)</td>
+                        <tr>
+                          <td data-label="Rule Area">Inactivity Period</td>
+                          <td data-label="Step 1">30 Days</td>
+                          <td data-label="Step 2">30 Days</td>
+                          <td data-label="Step 3">30 Days</td>
+                          <td data-label="Live">30 Days</td>
+                          <td data-label="Notes">Must place trade (Hard Breach)</td>
                         </tr>
-                          <td>Leverage</td>
-                          <td>1:10</td>
-                          <td>1:10</td>
-                          <td>1:10</td>
-                          <td>1:10</td>
-                          <td></td>
+                        <tr>
+                          <td data-label="Rule Area">Leverage</td>
+                          <td data-label="Step 1">1:10</td>
+                          <td data-label="Step 2">1:10</td>
+                          <td data-label="Step 3">1:10</td>
+                          <td data-label="Live">1:10</td>
+                          <td data-label="Notes"></td>
                         </tr>
-                          <td>Stoploss Required</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>Required for each trade (Soft Breach)</td>
+                        <tr>
+                          <td data-label="Rule Area">Stoploss Required</td>
+                          <td data-label="Step 1">Yes</td>
+                          <td data-label="Step 2">Yes</td>
+                          <td data-label="Step 3">Yes</td>
+                          <td data-label="Live">Yes</td>
+                          <td data-label="Notes">Required for each trade (Soft Breach)</td>
                         </tr>
-                          <td>Flat for Weekend</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>Yes</td>
-                          <td>All positions closed on Friday 3:45pm (Soft Breach)</td>
+                        <tr>
+                          <td data-label="Rule Area">Flat for Weekend</td>
+                          <td data-label="Step 1">Yes</td>
+                          <td data-label="Step 2">Yes</td>
+                          <td data-label="Step 3">Yes</td>
+                          <td data-label="Live">Yes</td>
+                          <td data-label="Notes">All positions closed on Friday 3:45pm (Soft Breach)</td>
                         </tr>
-                        </tr>
-                          <td>Max Time</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>No Max Time requirements</td>
+                        <tr>
+                          <td data-label="Rule Area">Max Time</td>
+                          <td data-label="Step 1">-</td>
+                          <td data-label="Step 2">-</td>
+                          <td data-label="Step 3">-</td>
+                          <td data-label="Live">-</td>
+                          <td data-label="Notes">No Max Time requirements</td>
                         </tr>
                       </tbody>
                     </table>

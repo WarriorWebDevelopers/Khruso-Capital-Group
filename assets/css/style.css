@@ -1849,7 +1849,7 @@ body {
     overflow-x: auto;
   }
 
-  @media (max-width: 600px) {
+  /* @media (max-width: 600px) {
     .table {
       display: inline-block;
       max-width: -moz-fit-content;
@@ -1858,12 +1858,35 @@ body {
       overflow-x: auto;
       white-space: nowrap;
     }
-  }
+  } */
+
+  @media (max-width: 575px) {
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    table td[data-label] {
+        display: flex;
+    }
+
+    table td[data-label]::before {
+        content: attr(data-label);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        width: 50%;
+    }
+}
 
   .table th, .table td {
     padding: 12px;
     text-align: left;
-    border-top: 1px solid #dee2e6;
   }
 
   .paragraphs {
