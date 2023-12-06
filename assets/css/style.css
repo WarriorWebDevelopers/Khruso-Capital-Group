@@ -1849,6 +1849,17 @@ body {
     overflow-x: auto;
   }
 
+  @media (max-width: 600px) {
+    .table {
+      display: inline-block;
+      max-width: -moz-fit-content;
+      max-width: max-content;
+      margin: 0 auto;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+
   .table th, .table td {
     padding: 12px;
     text-align: left;
