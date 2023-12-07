@@ -602,7 +602,7 @@ body {
   }
   
   .featured-services .icon-box .btn-buy:hover {
-    background: #3b8af2;
+    background: #00bcd4;
   }
 
 
@@ -689,19 +689,20 @@ body {
   }
   
   .featured-services .icon-box:hover::before {
-    background: #106eea;
+    background: #00bcd4;
     top: 0;
     border-radius: 0px;
   }
   
   .featured-services .icon {
     margin-bottom: 15px;
+    text-align: center;
   }
   
   .featured-services .icon i {
     font-size: 48px;
     line-height: 1;
-    color: #106eea;
+    color: #00bcd4;
     transition: all 0.3s ease-in-out;
   }
   
@@ -712,7 +713,7 @@ body {
   }
   
   .featured-services .title a {
-    color: rgba(255,255,255,.7);
+    color: #00bcd4;
   }
   
   .featured-services .description {
@@ -794,6 +795,7 @@ body {
     position: relative;
     text-align: center;
     background: #f1f6fe;
+    border-radius: 10px;
   }
   
   .counts .count-box i {
@@ -802,7 +804,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     font-size: 24px;
-    background: #106eea;
+    background: #00bcd4;
     color: #181616;
     width: 56px;
     height: 56px;
@@ -862,6 +864,7 @@ body {
     padding: 80px 20px;
     transition: all ease-in-out 0.3s;
     background: #333333 !important;
+    border-radius: 10px;
   }
   
   .services .icon-box .icon {
@@ -902,17 +905,17 @@ body {
   }
   
   .services .icon-box:hover {
-    border-color: #106eea;
+    border-color: #00bcd4;
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
   }
   
   .services .icon-box:hover h4 a,
   .services .icon-box:hover .icon i {
-    color: #106eea;
+    color: #00bcd4;
   }
   
   .services .icon-box:hover .icon {
-    border-color: #106eea;
+    border-color: #00bcd4;
   }
   
   /*--------------------------------------------------------------
@@ -1825,7 +1828,7 @@ body {
   }
 
   .nav-tabs .nav-link.active {
-    background-color: #007bff;
+    background-color: #00bcd4;
     color: #fff;
   }
 
@@ -1902,3 +1905,45 @@ body {
     margin-bottom: 10px;
   }
   
+
+  /* Updates and Blogs */
+
+  .update-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(242, 240, 240, 0.804);
+}
+
+.update-title {
+    color: #00bcd4;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.update-content {
+    color: #495057;
+    line-height: 1.6;
+}
+
+.btn-mdb-color {
+    background-color: #00bcd4;
+    color: #ffffff;
+}
+
+@media (max-width: 500px) {
+
+
+    .update-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .update-content {
+        font-size: 14px;
+    }
+}
