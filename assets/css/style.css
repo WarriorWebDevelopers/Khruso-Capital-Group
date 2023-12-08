@@ -1852,7 +1852,7 @@ body {
     overflow-x: auto;
   }
 
-  /* @media (max-width: 600px) {
+  @media (max-width: 600px) {
     .table {
       display: inline-block;
       max-width: -moz-fit-content;
@@ -1861,9 +1861,9 @@ body {
       overflow-x: auto;
       white-space: nowrap;
     }
-  } */
+  }
 
-  @media (max-width: 575px) {
+  /* @media (max-width: 575px) {
 
     table thead {
         display: none;
@@ -1885,7 +1885,7 @@ body {
         font-weight: bold;
         width: 50%;
     }
-}
+} */
 
   .table th, .table td {
     padding: 12px;
