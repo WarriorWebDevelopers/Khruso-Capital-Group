@@ -1262,6 +1262,10 @@ body {
     overflow: hidden;
   }
   
+  .pricing .box:hover {
+    transform: scale(1.1);
+  }
+
   .pricing .box h3 {
     font-weight: 400;
     margin: -20px -20px 20px -20px;
@@ -1343,7 +1347,7 @@ body {
   
   .pricing .featured h3 {
     color: #fff;
-    background: #106eea;
+    background:#00bcd4;
   }
   
   .pricing .advanced {
