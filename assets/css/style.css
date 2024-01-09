@@ -481,7 +481,6 @@ section {
 .featured-services .icon-box .btn-buy:hover {
   background: #00bcd4;
 }
-/** BUTTON CSS **/
 .btn-sign-up {
   all: unset;
   display: inline-block;
@@ -590,7 +589,7 @@ section {
 }
 @media (max-width: 575.98px) {
   .featured-services h3 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 22px;
  }
 }
@@ -633,7 +632,11 @@ section {
 }
 @media (max-width: 575.98px) {
   .about h3 {
-      font-size: 18px;
+      font-size: 20px;
+      line-height: 22px;
+ }
+ .about .about-title .title-about{
+  font-size: 24px;
       line-height: 22px;
  }
 }
@@ -713,6 +716,17 @@ section {
 @media (max-width: 667px) {
   .counts .image img {
     max-width: 100%;
+  }
+  .counts .content{
+    padding: 100px ;
+  }
+  .counts .content .count-box span {
+    font-size: 30px;
+    line-height: 30px;
+    display: block;
+    font-weight: 700;
+    color:  #00bcd4;
+    margin-left: 50px;
   }
 }
 
@@ -820,7 +834,7 @@ section {
 
 @media (max-width: 575.98px) {
   .services h3 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 22px;
  }
 }
@@ -1104,7 +1118,7 @@ section {
 }
 @media (max-width: 575.98px) {
   .team h3 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 22px;
  }
 }
@@ -1207,7 +1221,7 @@ section {
 }
 @media (max-width: 575.98px) {
   .pricing h3 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 22px;
  }
 }
@@ -1324,7 +1338,7 @@ section {
 
 @media (max-width: 575.98px) {
   .faq h3 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 22px;
  }
 }
@@ -1468,9 +1482,15 @@ section {
 
 @media (max-width: 575.98px) {
   .contact h3 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 22px;
  }
+ .contact .info-box h3 {
+  font-size: 16px;
+  color: rgba(255,255,255,.7);
+  font-weight: 700;
+  margin: 10px 0;
+}
 }
 /****************************************************************** FOOTER *****************************************************************/
 #footer {
@@ -1713,7 +1733,7 @@ section {
 }
 @media (max-width: 575.98px) {
   .step-plan h3 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 22px;
  }
 }
@@ -1774,7 +1794,7 @@ section {
 } */
 @media (max-width: 575.98px) {
   .sliders h3 {
-      font-size:16px;
+      font-size:20px;
       line-height: 22px 
  }
 }
