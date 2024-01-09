@@ -718,16 +718,24 @@ section {
     max-width: 100%;
   }
   .counts .content{
-    padding: 100px ;
+    padding: 100px;
   }
-  .counts .content .count-box span {
-    font-size: 30px;
-    line-height: 30px;
-    display: block;
-    font-weight: 700;
-    color:  #00bcd4;
-    margin-left: 50px;
-  }
+.counts .content .count-box i {
+  display: block;
+  font-size: 30px;
+  color:  #00bcd4;
+  float: left;
+  line-height: 0;
+}
+
+.counts .content .count-box span {
+  font-size: 30px;
+  line-height: 30px;
+  display: block;
+  font-weight: 700;
+  color:  #00bcd4;
+  margin-left: 50px;
+}
 }
 
 /****************************************************************** CLIENTS *****************************************************************/
@@ -1247,7 +1255,7 @@ section {
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #0d58ba;
+  color: #00bcd4;
   transition: 0.3s;
 }
 .faq .faq-list i {
@@ -1296,7 +1304,7 @@ section {
 
 .faq .accordion-button {
   padding: 20px 30px 20px 60px;
-  /* font-weight: 500; */
+  font-weight: 500;
   border: 0;
   font-size: 16px;
   text-align: left;
@@ -1341,6 +1349,27 @@ section {
       font-size: 20px;
       line-height: 22px;
  }
+ .faq .faq-list {
+  padding: 0;
+  list-style: none;
+  }
+
+  .faq .faq-list .question {
+    display: block;
+    position: relative;
+    font-family: #dadfe6;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .faq .faq-list i {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 1px;
+  }
 }
 
 
