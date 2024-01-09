@@ -1192,7 +1192,6 @@ section {
   border-bottom: 1px solid #d4e5fc;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  background: rgba(14, 29, 52, 0.03);
 }
 .faq .faq-list .question {
   display: block;
@@ -1251,7 +1250,7 @@ section {
 }
 
 .faq .accordion-button {
-  padding: 15px 30px 20px 60px;
+  padding: 20px 30px 20px 60px;
   font-weight: 600;
   border: 0;
   font-size: 18px;
@@ -1271,7 +1270,7 @@ section {
 
 .faq .question-icon {
   position: absolute;
-  top: 14px;
+  top: 18px;
   left: 25px;
   font-size: 20px;
 }
@@ -1279,11 +1278,11 @@ section {
 .faq .accordion-button:after {
   position: absolute;
   right: 15px;
-  top: 15px;
+  top: 20px;
 }
 
 .faq .accordion-body {
-  padding: 10px 30px 10px 60px;
+  padding: 10px 70px 10px 60px;
   border: 0;
   background: rgba(14, 29, 52, 0.03);
   border-top: 1px solid;
