@@ -481,7 +481,6 @@ section {
 .featured-services .icon-box .btn-buy:hover {
   background: #00bcd4;
 }
-/** BUTTON CSS **/
 .btn-sign-up {
   all: unset;
   display: inline-block;
@@ -588,6 +587,12 @@ section {
 .featured-services .icon-box:hover .icon i {
   color: #fff;
 }
+@media (max-width: 575.98px) {
+  .featured-services h3 {
+      font-size: 20px;
+      line-height: 22px;
+ }
+}
 /****************************************************************** ABOUT OF KHRUSOS PAGE *****************************************************************/
 .about .content h3 {
   font-weight: 600;
@@ -624,6 +629,16 @@ section {
 }
 .about .content p:last-child {
   margin-bottom: 0;
+}
+@media (max-width: 575.98px) {
+  .about h3 {
+      font-size: 20px;
+      line-height: 22px;
+ }
+ .about .about-title .title-about{
+  font-size: 24px;
+      line-height: 22px;
+ }
 }
 /****************************************************************** COUNTS *****************************************************************/
 .counts {
@@ -702,6 +717,25 @@ section {
   .counts .image img {
     max-width: 100%;
   }
+  .counts .content{
+    padding: 100px;
+  }
+.counts .content .count-box i {
+  display: block;
+  font-size: 30px;
+  color:  #00bcd4;
+  float: left;
+  line-height: 0;
+}
+
+.counts .content .count-box span {
+  font-size: 30px;
+  line-height: 30px;
+  display: block;
+  font-weight: 700;
+  color:  #00bcd4;
+  margin-left: 50px;
+}
 }
 
 /****************************************************************** CLIENTS *****************************************************************/
@@ -804,6 +838,13 @@ section {
 
 .services .icon-box:hover .icon i {
   color: #3498db;
+}
+
+@media (max-width: 575.98px) {
+  .services h3 {
+      font-size: 20px;
+      line-height: 22px;
+ }
 }
 
 /****************************************************************** MARQUEE *****************************************************************/
@@ -1083,6 +1124,12 @@ section {
   opacity: 1;
   bottom: 15px;
 }
+@media (max-width: 575.98px) {
+  .team h3 {
+      font-size: 20px;
+      line-height: 22px;
+ }
+}
 /****************************************************************** STEP PLAN PRICING *****************************************************************/
 .pricing .box {
   padding: 20px;
@@ -1180,6 +1227,12 @@ section {
   background: #106eea;
   color: #fff;
 }
+@media (max-width: 575.98px) {
+  .pricing h3 {
+      font-size: 20px;
+      line-height: 22px;
+ }
+}
 /****************************************************************** FAQs And GENERAL *****************************************************************/
 .faq {
   padding: 60px 0;
@@ -1202,7 +1255,7 @@ section {
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #0d58ba;
+  color: #00bcd4;
   transition: 0.3s;
 }
 .faq .faq-list i {
@@ -1251,9 +1304,9 @@ section {
 
 .faq .accordion-button {
   padding: 20px 30px 20px 60px;
-  font-weight: 600;
+  font-weight: 500;
   border: 0;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   background: rgba(14, 29, 52, 0.03);
   border-radius: 5px;
@@ -1289,6 +1342,34 @@ section {
   border-radius: 5px;
   border-image: linear-gradient(to right, transparent, black, transparent) 1;
   background-color: #92b6ba00;
+}
+
+@media (max-width: 575.98px) {
+  .faq h3 {
+      font-size: 20px;
+      line-height: 22px;
+ }
+ .faq .faq-list {
+  padding: 0;
+  list-style: none;
+  }
+
+  .faq .faq-list .question {
+    display: block;
+    position: relative;
+    font-family: #dadfe6;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .faq .faq-list i {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 1px;
+  }
 }
 
 
@@ -1428,6 +1509,19 @@ section {
   100% {
       transform: rotate(360deg);
  }
+}
+
+@media (max-width: 575.98px) {
+  .contact h3 {
+      font-size: 20px;
+      line-height: 22px;
+ }
+ .contact .info-box h3 {
+  font-size: 16px;
+  color: rgba(255,255,255,.7);
+  font-weight: 700;
+  margin: 10px 0;
+}
 }
 /****************************************************************** FOOTER *****************************************************************/
 #footer {
@@ -1668,6 +1762,12 @@ section {
 .custom-list li {
   margin-bottom: 10px;
 }
+@media (max-width: 575.98px) {
+  .step-plan h3 {
+      font-size: 20px;
+      line-height: 22px;
+ }
+}
 /****************************************************************** UPDATE AND BLOGS *****************************************************************/
 .update-container {
   max-width: 800px;
@@ -1725,7 +1825,7 @@ section {
 } */
 @media (max-width: 575.98px) {
   .sliders h3 {
-      font-size:16px;
+      font-size:20px;
       line-height: 22px 
  }
 }
