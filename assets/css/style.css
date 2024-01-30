@@ -2288,7 +2288,7 @@ img, a img {
 
 
 /*--------------------------------------------------------------
-# Hero Section
+# Banner Section
 --------------------------------------------------------------*/
 .table-cell {
   display: table-cell;
@@ -2303,6 +2303,7 @@ img, a img {
 }
 .overlay-mf {
   background-color: #00bcd4;
+  background: linear-gradient(to top, transparent 0%, black 100%);
 }
 
 .overlay-mf {
