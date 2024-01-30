@@ -2333,7 +2333,7 @@ img, a img {
 }
 
 .banner .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(207, 188, 188, 0.6);
   position: absolute;
   top: 0;
   left: 0px;
@@ -2404,6 +2404,10 @@ img, a img {
 
 .banner-single .breadcrumb a {
   color: #fff;
+}
+
+.banner-single .breadcrumb a:hover {
+  color: #009bd9;
 }
 
 /* Faqs List of Article */
