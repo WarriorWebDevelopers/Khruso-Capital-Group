@@ -388,7 +388,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /****************************************************************** SECTION GENERAL *****************************************************************/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 .section-title {
@@ -1235,7 +1235,7 @@ section {
 }
 /****************************************************************** FAQs And GENERAL *****************************************************************/
 .faq {
-  padding: 60px 0;
+  /* padding: 60px 0; */
 }
 .faq .faq-list {
   padding: 0;
@@ -1287,7 +1287,7 @@ section {
 }
 
 .faq {
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 .faq .accordion-item {
@@ -2311,9 +2311,9 @@ img, a img {
   top: 0;
   left: 0px;
   padding: 0;
-  height: 85%;
+  height: 100%;
   width: 100%;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .display-table {
@@ -2351,7 +2351,8 @@ img, a img {
 
 @media (min-width: 768px) {
   .banner #banner-title {
-    font-size: 4.5rem;
+    font-size: 20px;
+      line-height: 22px;
   }
 }
 
@@ -2371,21 +2372,64 @@ img, a img {
 }
 
 .banner-single {
-  height: 350px;
+  height: 150px;
 }
 
 .banner-single .banner-content {
   margin-top: 30px;
 }
 
-.banner-single .banner-title {
+.banner-single .banner-title h3{
+  font-size: 30px;
+  font-weight: bold;
   text-transform: uppercase;
-  font-size: 3rem;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #D5AD6D;
+ /*if no support for background-clip*/
+  font-family: 'Times New Roman',serif;
+  background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-single .banner-title h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.banner-single .banner-title h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
-@media (min-width: 768px) {
-  .banner-single .banner-title {
-    font-size: 3.5rem;
+@media (max-width: 575.98px) {
+  .banner-single .banner-title h3{
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #D5AD6D;
+   /*if no support for background-clip*/
+    font-family: 'Times New Roman',serif;
+    background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
