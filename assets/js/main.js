@@ -302,4 +302,32 @@
      });
   });
 
+  $(document).ready(function () {
+   $('.owl-carousel').owlCarousel({
+       items: 1,
+       loop: true,
+       margin: 10,
+       autoplay: true,
+       autoplayTimeout: 3000,
+       autoplayHoverPause: true,
+       nav: true,
+       dots: true
+   });
+
+   $('.item').each(function () {
+       var videoSrc = $(this).data('src');
+       var videoId = videoSrc.match(/\/embed\/([a-zA-Z0-9_-]*)/)[1];
+       var thumbnailUrl = 'https://img.youtube.com/vi/' + videoId + '/maxresdefault.jpg';
+       $(this).append('<img src="' + thumbnailUrl + '" alt="Video Thumbnail">');
+   });
+
+   $('.item').on('click', function () {
+       var videoSrc = $(this).data('src');
+       $('<div class="video-popup"><iframe width="560" height="315" src="' + videoSrc + '" frameborder="0" allowfullscreen></iframe></div>').appendTo('body');
+   });
+
+   $(document).on('click', '.video-popup', function () {
+       $(this).remove();
+   });
+});
 })()

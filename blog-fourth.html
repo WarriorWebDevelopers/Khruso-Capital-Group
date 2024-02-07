@@ -21,108 +21,6 @@
       <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
       <!-- Template Main CSS File -->
       <link rel="stylesheet" href="assets/css/style.css">
-
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-      <style>
-         
- 
-         #owl-carousel-section {
-             margin: 10px;
-         }
- 
-         .owl-carousel {
-             position: relative;
-         }
- 
-         .owl-carousel .owl-nav {
-             position: absolute;
-             top: 50%;
-             width: 50%;
-             display: flex;
-             justify-content: space-between;
-             transform: translateY(-50%);
-         }
- 
-         .owl-carousel .owl-nav button {
-             background: #333;
-             color: #fff;
-             padding: 10px;
-             border: none;
-             cursor: pointer;
-             font-size: 18px;
-             border-radius: 5px;
-         }
- 
-         .owl-carousel .owl-dots {
-             position: absolute;
-             bottom: 10px;
-             width: 50%;
-             display: flex;
-             justify-content: center;
-         }
- 
-         .owl-carousel .owl-dots button {
-             background: #f4eaea;
-             color: #fff;
-             border: none;
-             cursor: pointer;
-             width: 15px;
-             height: 15px;
-             margin: 0 5px;
-             border-radius: 50%;
-         }
- 
-         .item {
-             width: 50%;
-             padding: 0;
-             overflow: hidden;
-             position: relative;
-             height: 0;
-             padding-bottom: 25%;
-             cursor: pointer;
-             border-radius: 15px;
-             box-shadow: 0 0 15px rgba(214, 215, 216, 0.3);
-             border: 1px solid transparent;
-             border-image-slice: 1;
-         }
- 
-         .item img {
-             position: absolute;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-             border-radius: 10px;
-         }
- 
-         .video-popup {
-             position: fixed;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             background: rgba(0, 0, 0, 0.8);
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             z-index: 1000;
-         }
- 
-         .video-popup iframe {
-             width: 80%;
-             height: 80%;
-             border: none;
-             border-radius: 10px;
-         }
- 
-         @media only screen and (max-width: 768px) {
-             .owl-carousel .owl-nav,
-             .owl-carousel .owl-dots {
-                 display: none;
-             }
-         }
-     </style>
    </head>
    <body>
       <!-- Header -->
@@ -140,7 +38,7 @@
                      <li><a class="nav-link scrollto" href="about.html">About</a></li>
                      <li><a class="nav-link scrollto" href="faq.html">FAQ</a></li>
                      <li><a class="nav-link scrollto" href="blog-update.html">Blog and Updates</a></li>
-                     <li><a class="nav-link scrollto active" href="contact.html">Contact</a></li>
+                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
                      <a class="getstarted login-btn scrollto" href="https://khrusoscapitalgroupdashboard.propaccount.com/Account/Login?ReturnUrl=%2F">Login</a>
                   </ul>
                   <i class="bi bi-list mobile-nav-toggle"></i>
@@ -149,99 +47,125 @@
             </div>
          </div>
       </header>
+      <!-- End Header -->
       <div id="banner" class="banner banner-single route bg-image">
          <div class="overlay-mf"></div>
          <div class="banner-content display-table">
             <div class="table-cell">
                <div class="container">
                   <div class="banner-title mb-4">
-                     <h3>Contact Us</h3>
+                     <h3>Blog</h3>
                   </div>
+                  <ol class="breadcrumb d-flex justify-content-center">
+                     <li class="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                     </li>
+                     <li class="breadcrumb-item active">
+                        <a href="blog-update.html">Blog</a>
+                     </li>
+                  </ol>
                </div>
             </div>
          </div>
       </div>
-      <!-- End Header -->
       <main id="main" data-aos="fade-up">
-         <!-- ======= Contact Section ======= -->
-         <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
-               <div class="section-title">
-                  <p>Please fill out the below form. We would love to hear from you.</p>
-               </div>
-               <div class="row" data-aos="fade-up" data-aos-delay="100">
-                  <div class="col-lg-6">
-                     <div class="info-box mb-4">
-                        <i class="bx bi-geo-fill"></i>
-                        <h3>Our Address</h3>
-                        <p>Woodstock , GA 30188, United States</p>
+         <!-- ======= Blog Single Section ======= -->
+         <section class="blog-wrapper sect-pt4" id="blog">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8">
+                     <div class="post-box">
+                        <div class="post-thumb">
+                           <img src="assets/images/Khrusos_Capital_Group_Icon.png" class="img-fluid" alt="Khrusos Capital Group">
+                        </div>
+                        <div class="post-meta">
+                           <h1 class="article-title">A Reflection of Timeless Value</h1>
+                           <ul>
+                              <li>
+                                 <span class="bi bi-person"></span>
+                                 <a href="#">Matt Anderson-Kerans</a>
+                              </li>
+                              <li>
+                                 <span class="bi bi-tag"></span>
+                                 <a href="#">Trading</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="article-content">
+                           <p>
+                              The name Khrusos isn't merely a tag, but a representation of the standard of service we aspire to provide. Like the precious metal, our aim is to offer a platform marked by quality, reliability, and a promise of genuine value. It's about creating an environment where traders can not only enhance their financial standing but also polish their trading acumen to shine bright amidst market fluctuations.
+                           </p>
+                           <blockquote class="blockquote">
+                              <p class="mb-0">Khrusos Capital Group is an innovative proprietary trading firm looking for top, talented traders to join our firm and trade with excellent liquidity conditions and a wide range of markets.</p>
+                           </blockquote>
+                        </div>
                      </div>
                   </div>
-                  <div class="col-lg-3 col-md-6">
-                     <div class="info-box  mb-4">
-                        <i class="bx bi-envelope-fill"></i>
-                        <h3>Email Us</h3>
-                        <p>contact@example.com</p>
+                  <div class="col-md-4">
+                     <div class="widget-sidebar sidebar-search">
+                        <h5 class="sidebar-title">Search</h5>
+                        <div class="sidebar-content">
+                           <form>
+                              <div class="input-group">
+                                 <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+                                 <span class="input-group-btn">
+                                 <button class="btn btn-secondary btn-search" type="button">
+                                 <span class="bi bi-search"></span>
+                                 </button>
+                                 </span>
+                              </div>
+                           </form>
+                        </div>
                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
-                     <div class="info-box  mb-4">
-                        <i class="bx bi-phone-fill"></i>
-                        <h3>Call Us</h3>
-                        <!-- <p>+1 5589 55488 55</p> -->
-                        <p>Coming soon!</p>
+                     <div class="widget-sidebar">
+                        <h5 class="sidebar-title">Recent Post</h5>
+                        <div class="sidebar-content">
+                           <ul class="list-sidebar">
+                              <li>
+                                 <a href="blog-single.html">Embarking on a Golden Journey</a>
+                              </li>
+                              <li>
+                                 <a href="blog-second.html">The Essence Of Khrusos</a>
+                              </li>
+                              <li>
+                                 <a href="blog-third.html">A Reflection of Timeless Value</a>
+                              </li>
+                              <li>
+                                 <a href="blog-fourth.html">Upholding Exemplary Standards</a>
+                              </li>
+                              <li>
+                                 <a href="blog-fifth.html">Symbol of Resilience</a>
+                              </li>
+                           </ul>
+                        </div>
                      </div>
-                  </div>
-               </div>
-               <div class="row" data-aos="fade-right" data-aos-delay="200">
-                  <div class="col-lg-6 ">
-                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105711.55548919535!2d-84.59105457669968!3d34.108302938768055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f517173d18a0fd%3A0x9d4c3024f39900f7!2sWoodstock%2C%20GA!5e0!3m2!1sen!2sus!4v1699410374783!5m2!1sen!2sus" width="100%" height="384px" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                  <div class="col-lg-6">
-                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                           <div class="col form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                           </div>
-                           <div class="col form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                           </div>
+                     <!-- <div class="widget-sidebar">
+                        <h5 class="sidebar-title">Archives</h5>
+                        <div class="sidebar-content">
+                           <ul class="list-sidebar">
+                              <li>
+                                 <a href="#">September, 2017.</a>
+                              </li>
+                              <li>
+                                 <a href="#">April, 2017.</a>
+                              </li>
+                              <li>
+                                 <a href="#">Nam quo autem exercitationem.</a>
+                              </li>
+                              <li>
+                                 <a href="#">Atque placeat maiores nam quo autem</a>
+                              </li>
+                              <li>
+                                 <a href="#">Nam quo autem exercitationem.</a>
+                              </li>
+                           </ul>
                         </div>
-                        <div class="form-group">
-                           <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                           <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="my-3">
-                           <div class="loading">Loading</div>
-                           <div class="error-message"></div>
-                           <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
-                     </form>
+                     </div> -->
                   </div>
                </div>
             </div>
          </section>
-         <section id="owl-carousel-section">
-            <div class="container" data-aos="fade-up">
-               <div class="section-title">
-                  <h3>Media</h3>
-                  <p>Follow the simple steps Below to get funded!</p>
-               </div>
-               <div class="owl-carousel">
-                  <div class="item" data-src="https://www.youtube.com/embed/Tk5fYnAk1Rg?si=AuFe-iXP91wW0mK7"></div>
-                  <div class="item" data-src="https://www.youtube.com/embed/VIDEO_ID_2"></div>
-                  <div class="item" data-src="https://www.youtube.com/embed/VIDEO_ID_3"></div>
-                  <div class="item" data-src="https://www.youtube.com/embed/VIDEO_ID_4"></div>
-                  <div class="item" data-src="https://www.youtube.com/embed/VIDEO_ID_5"></div>
-              </div>
-            </div> 
-        </section>
-    
-
-         <!-- End Contact Section -->
+         <!-- End Blog Single Section -->
       </main>
       <!-- End #main -->
       <!-- FOOTER LINKS AND COPYRIGHT -->
@@ -267,7 +191,7 @@
                      <a href="index.html"><img class="kcglogo" src="assets/images/Khrusos_Capital_Group_Full_Logo.png" width="190" height="100" alt="Khrusos Capital Group"></a>
                      <p>
                         Woodstock , GA 30188,<br>
-                        United States <br><br>
+                        United States
                      </p>
                   </div>
                   <div class="col-lg-3 col-md-6 footer-links">
@@ -323,11 +247,10 @@
       <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
       <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
       <script src="assets/vendor/php-email-form/validate.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-      
+      <!-- MDB JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.js"></script>
    </body>
 </html>
