@@ -2688,3 +2688,84 @@ a img {
 .blog .pagination li:hover a {
 	color: var(--contrast-color);
 }
+
+
+/* KRUSHOS POPUP BOX */
+
+
+/* Dark overlay background */
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+	opacity: 0;
+	transition: opacity 1s ease-in-out; /* Fade-in transition */
+  }
+
+  /* Popup box */
+  .popup-box {
+	background: #333;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	max-width: 400px;
+	color: #fff;
+	position: relative;
+	box-shadow: 0 0 15px rgba(214, 215, 216, 0.3);
+	height: 400px; /* Increased height */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 1s ease-in-out; /* Fade-in transition */
+  }
+
+  /* Title styling */
+  .popup-title {
+	font-size: 60px;
+	font-weight: bold;
+	margin-bottom: 15px;
+  }
+
+  /* Subheading styling */
+  .popup-subheading {
+	color: #ffd700; /* gold color */
+	font-size: 15px;
+	margin-bottom: 20px;
+  }
+
+  /* Close button styling */
+  .close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-size: 20px;
+	background: none;
+	border: none;
+	cursor: pointer;
+  }
+
+  /* Visit Now button styling */
+  .visit-now-btn {
+	background: #000000; /* Bootstrap primary color */
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px;
+	transition: background 0.3s;
+  }
+
+  .visit-now-btn:hover {
+	background: #0056b3; /* Darker shade on hover */
+  }

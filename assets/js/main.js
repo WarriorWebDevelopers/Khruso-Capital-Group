@@ -1,7 +1,9 @@
 (function () {
   "use strict";
    
-   //   <!--Start of Tawk.to Script-->
+  /**
+   * <!--Start of Tawk.to Script-->
+   */
    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
    (function(){
    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -11,6 +13,40 @@
    s1.setAttribute('crossorigin','*');
    s0.parentNode.insertBefore(s1,s0);
    })();
+
+
+   /**
+   * Popup Box
+   */
+   // Display the entire page after a delay with a fade-in effect
+   setTimeout(function() {
+      document.body.style.opacity = '1';
+
+      // Display the popup after a delay when the page loads
+      setTimeout(function() {
+      openPopup();
+
+      // Close the popup after 5000 milliseconds (5 seconds)
+      setTimeout(function() {
+         closePopup();
+      }, 6000);
+      }, 1000); // 1000 milliseconds (1 second) delay after the page fade-in
+   }, 5000); // 1000 milliseconds (1 second) delay for page load
+
+   function openPopup() {
+      document.getElementById('popupOverlay').style.display = 'flex';
+      document.getElementById('popupOverlay').style.opacity = '1';
+      document.getElementById('popupBox').style.opacity = '1';
+   }
+
+   function closePopup() {
+      document.getElementById('popupOverlay').style.opacity = '0';
+      document.getElementById('popupBox').style.opacity = '0';
+      setTimeout(function() {
+      document.getElementById('popupOverlay').style.display = 'none';
+      }, 1000); // 1000 milliseconds (1 second) delay for the fade-out transition
+   }
+
 
   /**
    * Easy selector helper function
