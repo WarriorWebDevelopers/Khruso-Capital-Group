@@ -18,35 +18,21 @@
    /**
    * Popup Box
    */
-   // Display the entire page after a delay with a fade-in effect
-   setTimeout(function() {
+  // Display the entire page after a delay with a fade-in effect
+   setTimeout(function () {
       document.body.style.opacity = '1';
-
+   
       // Display the popup after a delay when the page loads
-      setTimeout(function() {
+      setTimeout(function () {
       openPopup();
-
+   
       // Close the popup after 5000 milliseconds (5 seconds)
-      setTimeout(function() {
+      setTimeout(function () {
          closePopup();
-      }, 6000);
+      }, 5000);
       }, 1000); // 1000 milliseconds (1 second) delay after the page fade-in
-   }, 5000); // 1000 milliseconds (1 second) delay for page load
-
-   function openPopup() {
-      document.getElementById('popupOverlay').style.display = 'flex';
-      document.getElementById('popupOverlay').style.opacity = '1';
-      document.getElementById('popupBox').style.opacity = '1';
-   }
-
-   function closePopup() {
-      document.getElementById('popupOverlay').style.opacity = '0';
-      document.getElementById('popupBox').style.opacity = '0';
-      setTimeout(function() {
-      document.getElementById('popupOverlay').style.display = 'none';
-      }, 1000); // 1000 milliseconds (1 second) delay for the fade-out transition
-   }
-
+   }, 5000); // 5000 milliseconds (5 seconds) delay for page load
+ 
 
   /**
    * Easy selector helper function
@@ -378,3 +364,18 @@
    });
 });
 })()
+
+// Display the entire page after a delay with a fade-in effect 
+ function openPopup() {
+   document.getElementById('popupOverlay').style.display = 'flex';
+   document.getElementById('popupOverlay').style.opacity = '1';
+   document.getElementById('popupBox').style.opacity = '1';
+ }
+ 
+ function closePopup() {
+   document.getElementById('popupOverlay').style.opacity = '0';
+   document.getElementById('popupBox').style.opacity = '0';
+   setTimeout(function () {
+     document.getElementById('popupOverlay').style.display = 'none';
+   }, 1000); // 1000 milliseconds (1 second) delay for the fade-out transition
+ }

@@ -60,9 +60,9 @@
       </section>
       <!-- End Hero -->
       <!-- Popup Overlay -->
-      <div id="popupOverlay" class="overlay">
+      <div id="popupOverlay" class="overlay" onclick="closePopup()">
          <!-- Popup Box -->
-         <div id="popupBox" class="popup-box">
+         <div id="popupBox" class="popup-box" onclick="event.stopPropagation();">
          <!-- Close Button -->
          <button class="close-btn" onclick="closePopup()">X</button>
          <!-- Title -->
