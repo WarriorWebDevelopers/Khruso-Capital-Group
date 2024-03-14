@@ -133,10 +133,21 @@
                   <div class="col-lg-6">
                      <h4>Subscribe to Our Newsletter</h4>
                      <p>Enter your email below to receive updates and more information.</p>
-                     <form action="" method="post">
+                     <!-- <form action="" method="post">
                         <input class="mb-3" placeholder="Enter Your Email Address" type="email" name="email" title="Enter you Email Address">
                         <input type="submit" value="Subscribe" submit="Subscribe">
-                     </form>
+                     </form> -->
+                     <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+                        <div class="subscribe-form">
+                          <input class="mb-3" placeholder="Enter Your Email Address" type="email" name="email" title="Enter you Email Address">
+                          <input type="submit" value="Subscribe" submit="Subscribe">
+                        </div>
+                        <div class="mt-2">
+                          <div class="loading">Loading</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">Your notification request was sent. Thank you!</div>
+                        </div>
+                      </form>
                   </div>
                </div>
             </div>
